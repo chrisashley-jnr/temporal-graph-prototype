@@ -1,0 +1,47 @@
+test_future_append_does_not_change_prior_features (test_pipeline.Causality.test_future_append_does_not_change_prior_features) ... ok
+test_labels_and_episode_ids_never_enter_features (test_pipeline.Causality.test_labels_and_episode_ids_never_enter_features) ... ok
+test_neural_inference_prefix_and_label_independence (test_pipeline.Causality.test_neural_inference_prefix_and_label_independence) ... ok
+test_same_timestamp_is_scored_before_updates (test_pipeline.Causality.test_same_timestamp_is_scored_before_updates) ... ok
+test_tied_timestamps_stay_in_one_partition (test_pipeline.Causality.test_tied_timestamps_stay_in_one_partition) ... ok
+test_csv_roundtrip (test_pipeline.DataContract.test_csv_roundtrip) ... ok
+test_duplicate_id_rejected (test_pipeline.DataContract.test_duplicate_id_rejected) ... ok
+test_incomplete_row_rejected (test_pipeline.DataContract.test_incomplete_row_rejected) ... ok
+test_labels_required_to_train (test_pipeline.DataContract.test_labels_required_to_train) ... ok
+test_milliseconds_rejected (test_pipeline.DataContract.test_milliseconds_rejected) ... ok
+test_mixed_currency_rejected (test_pipeline.DataContract.test_mixed_currency_rejected) ... ok
+test_naive_timestamp_rejected (test_pipeline.DataContract.test_naive_timestamp_rejected) ... ok
+test_nonfinite_amount_rejected (test_pipeline.DataContract.test_nonfinite_amount_rejected) ... ok
+test_one_class_partition_rejected (test_pipeline.DataContract.test_one_class_partition_rejected) ... ok
+test_all_four_models_execute_with_finite_scores (test_pipeline.FullExperiment.test_all_four_models_execute_with_finite_scores) ... ok
+test_flipping_test_labels_does_not_change_fit_or_thresholds (test_pipeline.FullExperiment.test_flipping_test_labels_does_not_change_fit_or_thresholds) ... ok
+test_metric_bounds_and_review_budget (test_pipeline.FullExperiment.test_metric_bounds_and_review_budget) ... ok
+test_no_episodes_uses_validation_f1_fallback (test_pipeline.FullExperiment.test_no_episodes_uses_validation_f1_fallback) ... ok
+test_view_hides_gold_and_has_no_future_events (test_pipeline.FullExperiment.test_view_hides_gold_and_has_no_future_events) ... ok
+test_foreign_origin_rejected (test_pipeline.LocalAPI.test_foreign_origin_rejected) ... ok
+test_malformed_csv_rejected_synchronously (test_pipeline.LocalAPI.test_malformed_csv_rejected_synchronously) ... ok
+test_nonobject_post_rejected (test_pipeline.LocalAPI.test_nonobject_post_rejected) ... ok
+test_status_endpoint (test_pipeline.LocalAPI.test_status_endpoint) ... ok
+test_capacity_and_priority (test_pipeline.Queue.test_capacity_and_priority) ... ok
+test_cooldown_suppresses_reopening (test_pipeline.Queue.test_cooldown_suppresses_reopening) ... ok
+test_crossing_and_right_censored_episodes_excluded (test_pipeline.Queue.test_crossing_and_right_censored_episodes_excluded) ... ok
+test_episode_credit_counts_once_and_respects_deadline (test_pipeline.Queue.test_episode_credit_counts_once_and_respects_deadline) ... ok
+test_expiry_before_late_service (test_pipeline.Queue.test_expiry_before_late_service) ... ok
+test_gold_labels_do_not_change_operational_decisions (test_pipeline.Queue.test_gold_labels_do_not_change_operational_decisions) ... ok
+test_ties_have_deterministic_account_order (test_pipeline.Queue.test_ties_have_deterministic_account_order) ... ok
+test_unused_service_slots_do_not_accumulate (test_pipeline.Queue.test_unused_service_slots_do_not_accumulate) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 6.668s
+
+OK
+
+API checks after final localhost configuration change:
+test_foreign_origin_rejected (test_pipeline.LocalAPI.test_foreign_origin_rejected) ... ok
+test_malformed_csv_rejected_synchronously (test_pipeline.LocalAPI.test_malformed_csv_rejected_synchronously) ... ok
+test_nonobject_post_rejected (test_pipeline.LocalAPI.test_nonobject_post_rejected) ... ok
+test_status_endpoint (test_pipeline.LocalAPI.test_status_endpoint) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.518s
+
+OK
