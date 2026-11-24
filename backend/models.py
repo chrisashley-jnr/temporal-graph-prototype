@@ -118,7 +118,7 @@ def train_all(events,progress=lambda text:None,seed=42,epochs=3,output=None):
 
     for key,cls,run in nn_pairs:
         torch.manual_seed(seed);model=cls(raw.shape[1]);opt=torch.optim.Adam(model.parameters(),lr=.002)
-        startedperf_counter();history=[]
+        started=perf_counter();history=[]
         for epoch in range(epochs):
             progress(f'Training {MODEL_NAMES[key]} · epoch {epoch+1} of {epochs}')
             model.train();_,loss=run(model,events[:nt],edges[:nt],x[:nt],labels[:nt],len(accounts),True,opt,criterion);history.append(loss)
